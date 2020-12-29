@@ -1,3 +1,7 @@
 .board-tiles {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  width: 40rem;
+  justify-content: center;
+  margin: 0 auto;
 }
