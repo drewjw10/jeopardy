@@ -11,7 +11,11 @@ const Board = () => {
     for (let i = 0; i < ROWS; i++) {
       let children = [];
       for (let j = 0; j < COLUMNS; j++) {
-        children.push(<BoardTile content={j} />);
+        children.push(
+          <div className='tile'>
+            <BoardTile content={j} />
+          </div>
+        );
       }
       BOARD.push(children);
     }
