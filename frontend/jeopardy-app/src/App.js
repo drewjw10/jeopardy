@@ -8,8 +8,8 @@ import {
 
 import logo from "./logo.svg";
 import "./App.css";
+import MainHome from "./shared/components/Homescreen/MainHome";
 import Board from "./Gameboard/components/Board";
-import NewBoard from "./Gameboard/components/NewBoard";
 import MainNavigation from "./shared/components/UIElements/Navigation/MainNavigation";
 
 function App() {
@@ -19,10 +19,10 @@ function App() {
       <main>
         <Switch>
           <Route path='/' exact>
-            <Board />
+            <MainHome />
           </Route>
           <Route path='/boards' exact>
-            <NewBoard />
+            <Board />
           </Route>
           <Redirect to='/' />
         </Switch>

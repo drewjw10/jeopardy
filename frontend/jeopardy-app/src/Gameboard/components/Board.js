@@ -13,7 +13,7 @@ const Board = () => {
       for (let j = 0; j < COLUMNS; j++) {
         children.push(
           <div className='tile'>
-            <BoardTile content={j} />
+            <BoardTile id={`tile-${j}`} content={"Question"} />
           </div>
         );
       }
